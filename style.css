@@ -11,17 +11,15 @@ p{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 60px;
     color: rgb(39, 39, 39);
+    margin-top: 0px;
 }
 
 .soustitre{
     font-family: 'B612 Mono', monospace;
-    font-size: 27px;
-    color: rgb(85, 85, 85);
+    font-size: 32px;
+    color: rgb(73, 73, 73);
     margin-top: -40px;
-    margin-left: 3px;
 }
-
-
 
 #headerprincipal{
     width: 100%;
@@ -58,7 +56,7 @@ p{
 }
 
 #presentation p{
-    font-size: 30px;
+    font-size: 28px;
     color: #35567C;
     text-align: justify;
     padding-top: 10vh;
@@ -101,7 +99,7 @@ nav section:hover .material-icons{
     transform: scale(0.1);
 }
 
-  nav section #textenav{
+nav section #textenav{
     font-size: 23px;
     color: rgba(53, 86, 124, 0);
     text-align: center;
@@ -121,4 +119,94 @@ nav section:hover #textenav{
 #parcours{
     margin-right: 10%;
     margin-left: 10%;
+    border: red hidden 1px;
 }
+
+#parcours div{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#parcours section{
+    width: 45%;
+}
+
+#parcours article{
+    border: hidden blue 1px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(39, 39, 39);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 5%;
+}
+
+#parcours article aside h2{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+#parcours article aside h1{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #35567C;
+}
+
+#parcours article aside h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#parcours article aside h4{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(85, 85, 85);
+}
+
+#parcours article aside a{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(85, 85, 85);
+}
+
+#iconaside{
+   z-index: 0;
+   display: inline;
+}
+
+#parcours article aside img{
+    height: 12vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.asidetexte{
+    width: 70%;
+    border: blue hidden 1px;
+}
+
+.asideimg{
+    width: 30%;
+    border: green hidden 1px;
+    overflow: hidden;
+}
+
