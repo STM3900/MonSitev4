@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     color: #F5EFED;
+    background: rgb(253, 253, 253);
 }
 
 p{
@@ -72,6 +73,7 @@ nav{
     background: rgb(253, 253, 253);
     padding-top: 0.7%;
     padding-bottom: 0.7%;
+    z-index: 100;
 
     position: sticky;
     top: 0;
@@ -120,6 +122,7 @@ nav section:hover #textenav{
     margin-right: 10%;
     margin-left: 10%;
     border: red hidden 1px;
+    padding-bottom: 10%;
 }
 
 #parcours div{
@@ -189,6 +192,7 @@ nav section:hover #textenav{
 #iconaside{
    z-index: 0;
    display: inline;
+   color: #dc4437;
 }
 
 #parcours article aside img{
@@ -197,7 +201,6 @@ nav section:hover #textenav{
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .asidetexte{
     width: 70%;
@@ -210,3 +213,119 @@ nav section:hover #textenav{
     overflow: hidden;
 }
 
+#comp{
+    margin-right: 10%;
+    margin-left: 10%;
+    border: red hidden 1px;
+    padding-bottom: 10%;
+}
+
+#comp h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: -30px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(39, 39, 39);
+}
+
+#comp aside{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+#comp section{
+    width: 45%;
+    margin-bottom: 8%;
+}
+
+#comp section article p{
+    font-size: 20px;
+    color: rgb(39, 39, 39);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.comptimeline{
+    border: hidden green 1px;
+    margin-top: 7%;
+}
+
+.timeline {
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    text-align: left;
+    border: red hidden 1px;
+    margin-left: -40px;
+
+    transform: scale(1.05);
+  }
+  .timeline:before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    top: 64%;
+    left: 10%;
+    height: 3px;
+    margin-top: -13px;
+    background: rgb(85, 85, 85);
+  }
+  .event {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 1%;
+    margin-left: 11%;
+    display: inline-block;
+    background: rgb(253, 253, 253);
+    vertical-align: middle;
+    border-radius: 50%;
+    border: solid rgb(85, 85, 85) 3px;
+  }
+  .detail {
+    position: absolute;
+    line-height: 1em;
+    white-space: nowrap;
+    left: 50%;
+    
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(39, 39, 39);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .event:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    width: 3px;
+    background: rgb(128, 179, 223);
+    height: 20px;
+    z-index: -1;
+  }
+  .event.up:before {
+    top: -100%;
+  }
+  .event.down:before {
+    top: 100%;
+  }
+  .up .detail {
+    top: -50px;
+  }
+  .down .detail {
+    bottom: -50px;
+  }
+
+#projets{
+    margin-right: 10%;
+    margin-left: 10%;
+    border: red hidden 1px;
+    padding-bottom: 10%;
+}
