@@ -96,7 +96,8 @@
     </section>
     <section id="comp">
         <h1 class="titre">Compétences</h1>
-        <h3>En dessous de chaque "compétence" est disposée une timeline représentant tout les projets étant réalisé avec celle ci.</h3>
+        <h4>Langages :</h4>
+        <h3>En dessous de chaque langage est disposée une timeline représentant tout les projets étant réalisé avec celui-ci.</h3>
         <aside>
             <section>
                 <article>
@@ -189,10 +190,96 @@
                 </article>
             </section>
         </aside>
+        <h4>Langues :</h4>
     </section>
     <section id="projets">
         <h1 class="titre">Projets</h1>
+        <section>
+            <div id="flip"><p>StarLight</p></div>
+            <div id="panel">
+                <section class="panelBoxTexte">
+                    <section class="panelBoxDescrip">
+                        <p>Découvrez les secrets de l'univers de Starlight et de l'organisation gardienne de l'univers Karma. 
+                            Laissez vous emporter dans ce monde vivant et vaste. 
+                            Détendez-vous et respirez. 
+                            Après tout, les étoiles sont plus belles les yeux fermés.</p>
+                    </section>
+                    <section class="panelBoxListe">
+                        <h1>Objectifs :</h1>
+                        <ul>
+                            <li>J'aime</li>
+                            <li>Les</li>
+                            <li>Gnocchi</li>
+                        </ul>
+                    </section>
+                    <section class="panelBoxListe">
+                        <h1>Langages et logiciels utilisés :</h1>
+                        <ul>
+                            <li>CSS</li>
+                            <li>Github</li>
+                            <li>VsCode</li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="panelBoxAutre">
+                    <section class="panelBoxImg">
+                        <img src="medias/iconesite/StarLightLogo.png" alt="">
+                    </section>
+                    <section class="panelBoxBouton">
+                        <a class="bouton" href="">En savoir plus</a>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section>
+            <div id="flip2"><p>StarLight</p></div>
+            <div id="panel2">
+                <section class="panelBoxTexte">
+                    <section class="panelBoxDescrip">
+                        <p>Découvrez les secrets de l'univers de Starlight et de l'organisation gardienne de l'univers Karma. 
+                            Laissez vous emporter dans ce monde vivant et vaste. 
+                            Détendez-vous et respirez. 
+                            Après tout, les étoiles sont plus belles les yeux fermés.</p>
+                    </section>
+                    <section class="panelBoxListe">
+                        <h1>Objectifs :</h1>
+                        <ul>
+                            <li>J'aime</li>
+                            <li>Les</li>
+                            <li>Gnocchi</li>
+                        </ul>
+                    </section>
+                    <section class="panelBoxListe">
+                        <h1>Langages et logiciels utilisés :</h1>
+                        <ul>
+                            <li>CSS</li>
+                            <li>Github</li>
+                            <li>VsCode</li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="panelBoxAutre">
+                    <section class="panelBoxImg">
+                        <img src="medias/iconesite/StarLightLogo.png" alt="">
+                    </section>
+                    <section class="panelBoxBouton">
+                        <a class="bouton" href="">En savoir plus</a>
+                    </section>
+                </section>
+            </div>
+        </section>
     </section>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+    });
+    </script>
 </html>

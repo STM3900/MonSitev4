@@ -231,6 +231,16 @@ nav section:hover #textenav{
     color: rgb(39, 39, 39);
 }
 
+#comp h4{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 50px;
+    margin-left: 10px;
+    color: rgb(48, 48, 48);
+    margin-bottom: 45px;
+    margin-top: 80px;
+    margin-left: 8px;
+}
+
 #comp aside{
     margin-top: 10%;
     display: flex;
@@ -328,4 +338,185 @@ nav section:hover #textenav{
     margin-left: 10%;
     border: red hidden 1px;
     padding-bottom: 10%;
+}
+
+#panel, #flip{
+    padding: 0px;    
+    background: rgb(245, 245, 245);
+    border: solid 1px rgb(240, 240, 240);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip p{
+    font-family: 'B612 Mono', monospace;
+    color: rgb(66, 66, 66);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+
+#panel2, #flip2{
+    padding: 0px;    
+    background: rgb(245, 245, 245);
+    border: solid 1px rgb(240, 240, 240);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip2 p{
+    font-family: 'B612 Mono', monospace;
+    color: rgb(66, 66, 66);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+  
+#panel{
+    height: 80vh;
+    display: none;
+    background-image: url("medias/bg/StarLightCover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    border: red hidden 3px;
+}
+
+#panel2{
+    height: 80vh;
+    display: none;
+    background-image: url("medias/bg/StarLightCover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    border: red hidden 3px;
+}
+
+.panelBoxTexte{
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    border: green hidden 3px;
+}
+
+.panelBoxTexte p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+    text-align: justify;
+}
+
+.panelBoxDescrip{
+    width: 100%;
+}
+
+.panelBoxDescrip p{
+    width: 100%;
+    font-size: 25px;
+}
+
+.panelBoxListe{
+    width: 45%;
+}
+
+.panelBoxListe h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(223, 223, 223);
+}
+
+.panelBoxListe ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+    text-align: justify;
+}
+
+/* */
+
+.panelBoxAutre{
+    width: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    border: blue hidden 3px;
+}
+
+.panelBoxAutre section{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.panelBoxImg{
+    width: 100%;
+}
+
+.panelBoxImg img{
+    height: 15vw;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panelBoxBouton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bouton{
+    text-decoration: none;
+    background-color: #eeeeee;
+    border: solid 2px rgb(29, 29, 29);
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 3px;
+    text-align: center;
+}
+  
+.bouton:hover{
+      background-color: rgb(17, 17, 17);
+      border: solid 2px #e6e6e6;
+      color: white;
 }
