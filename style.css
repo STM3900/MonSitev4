@@ -18,7 +18,7 @@ p{
 .soustitre{
     font-family: 'B612 Mono', monospace;
     font-size: 32px;
-    color: rgb(73, 73, 73);
+    color: rgb(28, 52, 78);
     margin-top: -40px;
 }
 
@@ -101,7 +101,7 @@ nav section:hover .material-icons{
     transform: scale(0.1);
 }
 
-nav section #textenav{
+nav section .textenav{
     font-size: 23px;
     color: rgba(53, 86, 124, 0);
     text-align: center;
@@ -113,9 +113,10 @@ nav section #textenav{
     text-decoration: none;
 }
 
-nav section:hover #textenav{
+nav section:hover .textenav{
     color: #35567C;
     opacity: 1;
+    cursor: pointer;
 }
 
 #parcours{
@@ -217,7 +218,6 @@ nav section:hover #textenav{
     margin-right: 10%;
     margin-left: 10%;
     border: red hidden 1px;
-    padding-bottom: 10%;
 }
 
 #comp h3{
@@ -266,7 +266,7 @@ nav section:hover #textenav{
     margin-top: 7%;
 }
 
-.timeline {
+.timeline{
     height: 100px;
     line-height: 100px;
     position: relative;
@@ -275,8 +275,9 @@ nav section:hover #textenav{
     margin-left: -40px;
 
     transform: scale(1.05);
-  }
-  .timeline:before {
+}
+
+.timeline:before{
     content: '';
     position: absolute;
     width: 70%;
@@ -285,8 +286,9 @@ nav section:hover #textenav{
     height: 3px;
     margin-top: -13px;
     background: rgb(85, 85, 85);
-  }
-  .event {
+}
+
+.event{
     width: 20px;
     height: 20px;
     position: relative;
@@ -297,8 +299,9 @@ nav section:hover #textenav{
     vertical-align: middle;
     border-radius: 50%;
     border: solid rgb(85, 85, 85) 3px;
-  }
-  .detail {
+}
+
+.detail{
     position: absolute;
     line-height: 1em;
     white-space: nowrap;
@@ -309,8 +312,20 @@ nav section:hover #textenav{
     margin-bottom: 0;
     color: rgb(39, 39, 39);
     font-family: 'Montserrat', sans-serif;
-  }
-  .event:before {
+}
+
+.lien{
+    text-decoration: underline;
+    color: rgb(31, 31, 31);
+    transition: 0.3s;
+}
+
+.lien:hover{
+    cursor: pointer;
+    color: rgb(102, 158, 207);
+}
+
+.event:before{ 
     content: '';
     position: absolute;
     left: 50%;
@@ -319,39 +334,99 @@ nav section:hover #textenav{
     background: rgb(128, 179, 223);
     height: 20px;
     z-index: -1;
-  }
-  .event.up:before {
+}
+
+.event.up:before{
     top: -100%;
-  }
-  .event.down:before {
+}
+
+.event.down:before{
     top: 100%;
-  }
-  .up .detail {
+}
+
+.up .detail{
     top: -50px;
-  }
-  .down .detail {
+}
+
+.down .detail{
     bottom: -50px;
-  }
+}
+
+#languestitre h4{
+    margin-top: 0px;
+}
+
+.complangues{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+
+    border: blue hidden 1px;
+    padding-bottom: 5%;
+}
+
+.complangues section{
+    width: 100%;
+}
+
+.complangues article{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    border: red hidden 1px;
+}
+
+.complangues article img{
+    height: 11vw;
+}
+
+.complangues article ul{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    align-self: stretch;
+}
 
 #projets{
     margin-right: 10%;
     margin-left: 10%;
     border: red hidden 1px;
     padding-bottom: 10%;
+    margin-top: 3%;
 }
 
 #panel, #flip{
     padding: 0px;    
-    background: rgb(245, 245, 245);
-    border: solid 1px rgb(240, 240, 240);
-
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
     margin-top: 0;
     margin-bottom: 0;
 }
 
+#flip:hover{
+    cursor: pointer;
+}
+
+#panel{
+    height: 80vh;
+    display: none;
+    background-image: url("medias/bg/temaillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #flip p{
     font-family: 'B612 Mono', monospace;
-    color: rgb(66, 66, 66);
+    color: rgb(240, 240, 240);
     font-size: 35px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -360,40 +435,24 @@ nav section:hover #textenav{
 
 #panel2, #flip2{
     padding: 0px;    
-    background: rgb(245, 245, 245);
-    border: solid 1px rgb(240, 240, 240);
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
 
     margin-top: 0;
     margin-bottom: 0;
 }
 
+#flip2:hover{
+    cursor: pointer;
+}
+
 #flip2 p{
     font-family: 'B612 Mono', monospace;
-    color: rgb(66, 66, 66);
+    color: rgb(240, 240, 240);
     font-size: 35px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 12px;
-}
-  
-#panel{
-    height: 80vh;
-    display: none;
-    background-image: url("medias/bg/StarLightCover.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    border: red hidden 3px;
 }
 
 #panel2{
@@ -404,7 +463,137 @@ nav section:hover #textenav{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
 
+#panel3, #flip3{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip3:hover{
+    cursor: pointer;
+}
+
+#flip3 p{
+    font-family: 'B612 Mono', monospace;
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+
+#panel3{
+    height: 80vh;
+    display: none;
+    background-image: url("medias/bg/lasrillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel4, #flip4{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip4:hover{
+    cursor: pointer;
+}
+
+#flip4 p{
+    font-family: 'B612 Mono', monospace;
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+
+#panel4{
+    height: 83vh;
+    display: none;
+    background-image: url("medias/bg/lasrillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel5, #flip5{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip5:hover{
+    cursor: pointer;
+}
+
+#flip5 p{
+    font-family: 'B612 Mono', monospace;
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+
+#panel5{
+    height: 80vh;
+    display: none;
+    background-image: url("medias/bg/sowBg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel6, #flip6{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip6:hover{
+    cursor: pointer;
+}
+
+#flip6 p{
+    font-family: 'B612 Mono', monospace;
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+
+#panel6{
+    height: 80vh;
+    display: none;
+    background-image: url("medias/bg/cppBg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.panelGlobal{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -414,6 +603,7 @@ nav section:hover #textenav{
     flex-wrap: wrap;
 
     border: red hidden 3px;
+    height: 80vh;
 }
 
 .panelBoxTexte{
@@ -447,6 +637,7 @@ nav section:hover #textenav{
 
 .panelBoxListe{
     width: 45%;
+    align-self: flex-start;
 }
 
 .panelBoxListe h1{
@@ -460,6 +651,16 @@ nav section:hover #textenav{
     font-size: 20px;
     color: rgb(212, 212, 212);
     text-align: justify;
+}
+
+.listeob li{
+    margin-bottom: 10px;
+}
+
+.listeLongue li{
+    border: red hidden 1px;
+    width: 45%;
+	float: left;
 }
 
 /* */
@@ -478,8 +679,8 @@ nav section:hover #textenav{
 }
 
 .panelBoxAutre section{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .panelBoxImg{
@@ -500,12 +701,60 @@ nav section:hover #textenav{
     justify-content: center;
 }
 
-.bouton{
-    text-decoration: none;
+#temaBouton{
+    background-color: #ffffff;
+    border: solid 2px rgb(167, 42, 42);
+    color: black;
+    transition: 0.3s
+}
+
+#temaBouton:hover{
+    background-color: rgb(167, 42, 42);
+    border: solid 2px #ffffff;
+    color: white;
+}
+
+#starlightBouton{
     background-color: #eeeeee;
     border: solid 2px rgb(29, 29, 29);
-    font-family: 'Montserrat', sans-serif;
     color: black;
+    transition: 0.3s
+}
+
+#starlightBouton:hover{
+    background-color: rgb(17, 17, 17);
+    border: solid 2px #e6e6e6;
+    color: white;
+}
+
+#lasrBouton{
+    background-color: #6aabe9;
+    border: solid 2px #6aabe9;
+    color: white;
+    transition: 0.3s;
+}
+
+#lasrBouton:hover{
+    background-color: white;
+    color: black;
+}
+
+#sowBouton{
+    background-color: #cccccc;
+    border: solid 2px #e6e6e6;
+    color: black;
+    transition: 0.3s
+}
+
+#sowBouton:hover{
+    background-color: rgb(43, 43, 43);
+    border: solid 2px rgb(17, 207, 27);
+    color: white;
+}
+
+.bouton{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
     font-size: 20px;
     padding: 15px;
@@ -520,3 +769,162 @@ nav section:hover #textenav{
       border: solid 2px #e6e6e6;
       color: white;
 }
+
+.tema p{
+    color: rgb(17, 17, 17);
+}
+
+.tema h1{
+    color: rgb(17, 17, 17);
+}
+
+.tema ul{
+    color: rgb(17, 17, 17);
+}
+
+.dessinslasr p{
+    color: rgb(17, 17, 17);
+}
+
+.dessinslasr h1{
+    color: rgb(17, 17, 17);
+}
+
+.dessinslasr ul{
+    color: rgb(17, 17, 17);
+}
+
+.dessinslasr img{
+    border-radius: 10px;
+}
+
+.sow img{
+    border-radius: 50px;
+}
+
+.panelconver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    height: 83vh;
+}
+
+.panelconver section{
+    width: 60%;
+}
+
+.panelconver section h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    color: rgb(10, 10, 10);
+    text-align: justify;
+    font-weight: normal;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+  
+form article{
+    width: 100%;
+}
+  
+form p{
+    color: black; 
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    transition: opacity 0.3s;
+    opacity: 1;
+    text-align: left;
+}
+  
+input[type*="e"]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 100%;
+    color: rgb(53, 53, 53);
+    text-transform: uppercase;
+    border: 2px solid #555555;
+    transition: 0.3s;
+    outline: none;
+    font-style: italic;
+}
+  
+input[type*="e"]:focus{
+    border: 2px solid rgb(102, 158, 207);
+    border-radius: 25px;
+}
+
+#contact{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#contact div{
+    margin-top: 6%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#contact div article{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    border: red hidden 1px;
+}
+
+#contact div article p{
+    font-size: 25px;
+    color: rgb(19, 19, 19);
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.7s;
+}
+
+#contact div article:hover img{
+    transform: rotate(-360deg);
+}
+
+#contact div article:hover p{
+    color: #35567C;
+}
+
+#contact div article a{
+    text-decoration: none;
+}
+
+#contact div article img{
+    height: 5vw;
+    transition: 0.7s;
+}
+
+footer{
+    margin-top: 4%;
+    padding: 1px;
+    background: rgb(102, 158, 207);
+}
+
+footer p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
