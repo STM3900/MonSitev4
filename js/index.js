@@ -179,7 +179,7 @@ $(document).ready(function (){
         $("#panel5").slideUp("slow");
         $("#panel6").slideUp("slow");
     });
-    $("#jeucomp").click(function (){
+    $("#sowcomp").click(function (){
         $('html, body').animate({
             scrollTop: $("#flip5").offset().top
         }, 1000);
@@ -190,7 +190,7 @@ $(document).ready(function (){
         $("#panel4").slideUp("slow");
         $("#panel6").slideUp("slow");
     });
-    $("#sowcomp").click(function (){
+    $("#jeucomp").click(function (){
         $('html, body').animate({
             scrollTop: $("#flip6").offset().top
         }, 1000);

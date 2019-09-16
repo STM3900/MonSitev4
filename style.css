@@ -325,6 +325,29 @@ nav section:hover .textenav{
     color: rgb(102, 158, 207);
 }
 
+#comp .down h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin-left: 10px;
+    color: #35567C;
+    margin-bottom: 0px;
+    margin-top: -5px;
+    font-weight: normal;
+    font-style: italic;
+    width: 200px;
+}
+
+#comp .up h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin-left: 10px;
+    color: #35567C;
+    margin-bottom: 0px;
+    margin-top: -110px;
+    font-weight: normal;
+    font-style: italic;
+}
+
 .event:before{ 
     content: '';
     position: absolute;
@@ -927,4 +950,252 @@ footer p{
     text-align: center;
 }
 
+@media (max-width: 1100px)
+{   
+    #headerprincipal h1{
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 8vw;
+    }
+    
+    #headerprincipal p{
+        font-size: 3vw;
+    }
+}
 
+@media (max-width: 700px)
+{   
+    #headerprincipal h1{
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 11vw;
+    }
+    
+    #headerprincipal p{
+        font-size: 4.5vw;
+    }
+    
+    nav section .material-icons{
+        font-size: 8vw;
+    }
+    
+    nav section:hover .material-icons{
+        color: rgb(128, 179, 223);
+        transform: scale(1);
+        cursor: pointer;
+    }
+    
+    nav section .textenav{
+        display: none;
+    }
+
+    #presentation{
+        background: rgb(253, 253, 253);
+        padding: 1px;
+    }
+    
+    #presentation p{
+        font-size: 5vw;
+        color: #35567C;
+        text-align: justify;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .titre{
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 9vw;
+        color: rgb(39, 39, 39);
+        margin-top: 0px;
+    }
+
+    .soustitre{
+        font-family: 'B612 Mono', monospace;
+        font-size: 6vw;
+        color: rgb(28, 52, 78);
+        margin-top: 30px;
+    }
+
+    #parcours{
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-bottom: 10%;
+    }
+    
+    #parcours div{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #parcours section{
+        width: 100%;
+    }
+
+    #parcours article{
+        flex-direction: column;
+        justify-content: center;
+    
+        margin-top: 5%;
+    }
+    
+    #parcours article aside h2{
+        font-size: 4vw;
+      }
+    
+    #parcours article aside h1{
+        font-size: 5vw;
+    }
+    
+    #parcours article aside h3{
+        font-size: 4vw;
+    }
+    
+    #parcours article aside h4{
+        font-size: 3.5vw;
+    }
+    
+    #parcours article aside a{
+        font-size: 3.5vw;
+    }
+    
+    .asidetexte{
+        width: 100%;
+    }
+
+    #comp{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    
+    #comp h3{
+        font-size: 4vw;
+    }
+    
+    #comp h4{
+        font-size: 8vw;
+        margin-left: 10px;
+        margin-bottom: 45px;
+        margin-top: 40px;
+    }
+    
+    #comp aside{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .soustitrecomp{
+        margin-bottom: 60px;
+    }
+    
+    #comp section{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    
+    #comp section article p{
+        font-size: 20px;
+        color: rgb(39, 39, 39);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .comptimeline{
+        margin-top: 7%;
+    }
+
+    .timeline:before{
+        width: 90%;
+    }
+
+    #languestitre h4{
+        margin-top: 0px;
+    }
+
+    .detail{        
+        font-size: 3.2vw;
+    }
+    
+    .lien{
+        text-decoration: underline;
+        color: rgb(31, 31, 31);
+        transition: 0.3s;
+    }
+    
+    .lien:hover{
+        cursor: pointer;
+        color: rgb(102, 158, 207);
+    }
+    
+    #comp .down h5{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        margin-left: 10px;
+        color: #35567C;
+        margin-bottom: 0px;
+        margin-top: -5px;
+        font-weight: normal;
+        font-style: italic;
+        width: 200px;
+    }
+    
+    #comp .up h5{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        margin-left: 10px;
+        color: #35567C;
+        margin-bottom: 0px;
+        margin-top: -110px;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .complangues{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    
+        border: blue hidden 1px;
+        padding-bottom: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    
+    .complangues section{
+        width: 100%;
+    }
+    
+    .complangues article{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    
+        border: red hidden 1px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    
+    .complangues article img{
+        height: 15vw;
+    }
+    
+    .complangues article ul{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(39, 39, 39);
+        align-self: flex-start;
+    }
+
+    .complangues article ul{
+        font-size: 4vw;
+    }
+}
