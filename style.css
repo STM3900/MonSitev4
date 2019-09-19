@@ -334,7 +334,7 @@ nav section:hover .textenav{
     margin-top: -5px;
     font-weight: normal;
     font-style: italic;
-    width: 200px;
+    width: 300px;
 }
 
 #comp .up h5{
@@ -1140,7 +1140,7 @@ footer p{
         margin-top: -5px;
         font-weight: normal;
         font-style: italic;
-        width: 200px;
+        width: 100px;
     }
     
     #comp .up h5{
@@ -1155,7 +1155,7 @@ footer p{
     }
     
     .complangues{
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1193,9 +1193,427 @@ footer p{
         font-family: 'Montserrat', sans-serif;
         color: rgb(39, 39, 39);
         align-self: flex-start;
+        width: 63%;
     }
 
     .complangues article ul{
         font-size: 4vw;
     }
+
+    /* POINT DE CONTROLE */
+
+#projets{
+    margin-right: 10%;
+    margin-left: 10%;
+    border: red hidden 1px;
+    padding-bottom: 10%;
+    margin-top: 3%;
 }
+
+#panel, #flip{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip:hover{
+    cursor: pointer;
+}
+
+#panel{
+    height: unset;
+    display: none;
+    background-image: url("medias/bg/temaillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#flip p{
+    font-size: 5vw;
+}
+
+#panel2, #flip2{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip2:hover{
+    cursor: pointer;
+}
+
+#flip2 p{
+    font-size: 5vw;
+}
+
+#panel2{
+    height: unset;
+    display: none;
+    background-image: url("medias/bg/StarLightCover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel3, #flip3{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip3:hover{
+    cursor: pointer;
+}
+
+#flip3 p{
+    font-size: 5vw;
+}
+
+#panel3{
+    height: unset;
+    display: none;
+    background-image: url("medias/bg/lasrillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel4, #flip4{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip4:hover{
+    cursor: pointer;
+}
+
+#flip4 p{
+    font-size: 5vw;
+}
+
+#panel4{
+    height: unset;
+    display: none;
+    background-image: url("medias/bg/lasrillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel5, #flip5{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip5:hover{
+    cursor: pointer;
+}
+
+#flip5 p{
+    font-size: 5vw;
+}
+
+#panel5{
+    height: unset;
+    display: none;
+    background-image: url("medias/bg/sowBg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#panel6, #flip6{
+    padding: 0px;    
+    background: rgb(115, 162, 202);
+    border: solid 1px rgba(80, 125, 165, 0.397);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flip6:hover{
+    cursor: pointer;
+}
+
+#flip6 p{
+    font-size: 5vw;
+}
+
+#panel6{
+    height: unset;
+    display: none;
+    background-image: url("medias/bg/cppBg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.panelGlobal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: unset;
+
+    border: red hidden 3px;
+    height: unset;
+}
+
+.panelBoxTexte{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.panelBoxTexte p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(223, 223, 223);
+    text-align: justify;
+}
+
+.panelBoxDescrip{
+    width: 100%;
+}
+
+.panelBoxDescrip p{
+    width: 100%;
+    font-size: 4vw;
+}
+
+.panelBoxListe{
+    width: 100%;
+    align-self: flex-start;
+    font-size: 4vw;
+}
+
+.panelBoxListe h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    color: rgb(223, 223, 223);
+}
+
+.panelBoxListe ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vw;
+    color: rgb(212, 212, 212);
+    text-align: justify;
+}
+
+.listeob li{
+    margin-bottom: 10px;
+}
+
+.listeLongue li{
+    border: red hidden 1px;
+    width: 45%;
+	float: left;
+}
+
+/* */
+
+.panelBoxAutre{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    border: blue hidden 3px;
+}
+
+.panelBoxAutre section{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-bottom: 5%;  
+}
+
+.panelBoxImg{
+    width: 100%;
+}
+
+.panelBoxImg img{
+    height: 30vw;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panelBoxBouton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tema p{
+    color: rgb(17, 17, 17);
+}
+
+.tema h1{
+    color: rgb(17, 17, 17);
+}
+
+.tema ul{
+    color: rgb(17, 17, 17);
+}
+
+#contact div{
+    margin-top: 6%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+#contact div article{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    border: red hidden 1px;
+}
+
+#contact div article p{
+    font-size: 5vw;
+    align-self: flex-start;
+}
+
+#contact div article:hover img{
+    transform: rotate(-360deg);
+}
+
+#contact div article:hover p{
+    color: #35567C;
+}
+
+#contact div article a{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#contact div article img{
+    height: 11vw;
+    transition: 0.7s;
+}
+
+.panelconver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    height: unset;
+}
+
+.panelconver section{
+    width: 90%;
+}
+
+.panelconver section h1{
+    font-size: 4vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+  
+form article{
+    width: 100%;
+}
+  
+form p{
+    font-size: 4vw;
+}
+
+footer{
+    margin-top: 6%;
+    padding: 1px;
+    background: rgb(102, 158, 207);
+}
+
+footer p{
+    font-size: 3.5vw;
+}
+
+.bouton{
+    font-size: 3.5vw;
+}
+
+.dessinslasr p{
+    color: rgb(17, 17, 17);
+}
+
+.dessinslasr h1{
+    color: rgb(17, 17, 17);
+}
+
+.dessinslasr ul{
+    color: rgb(17, 17, 17);
+}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #ffffff;
+    border-left: 1px solid #ffffff;
+  }
+
+::-webkit-scrollbar-track {
+    border-radius: 1px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #9c9c9c;
+    border-radius: 4px;
+    border-left: 2px solid #ffffff;
+  }
