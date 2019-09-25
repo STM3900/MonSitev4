@@ -109,6 +109,11 @@ $(document).ready(function (){
             scrollTop: $("#contact").offset().top
         }, 1000);
     });
+    $("#contactmenu2").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 1000);
+    });
 });
 
 //Pour les flip

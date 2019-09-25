@@ -66,6 +66,74 @@ p{
     margin-left: 10%;
 }
 
+#presentation div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 8%;
+    margin-bottom: 7%;
+}
+
+#presentation article{
+    width: 70%;
+}
+
+#presentation aside{
+    width: 25%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+}
+
+#presentation section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#iconesPresentationNav{
+    color: rgb(102, 158, 207);
+    font-size: 100px;
+    transition: 0.3s;
+    z-index: 3;
+    text-align: center;
+}
+
+#presentation aside section:hover #iconesPresentationNav{
+    color: rgba(128, 179, 223, 0);
+    transform: scale(0.1);
+}
+
+.textePresentationNav{
+    font-size: 28px;
+    color: rgba(53, 86, 124, 0);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    margin-top: -3px;
+    opacity: 0;
+    text-decoration: none;
+    position: absolute;
+}
+
+#presentation aside section:hover .textePresentationNav{
+    color: #35567C;
+    opacity: 1;
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -123,7 +191,7 @@ nav section:hover .textenav{
     margin-right: 10%;
     margin-left: 10%;
     border: red hidden 1px;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 #parcours div{
@@ -215,9 +283,11 @@ nav section:hover .textenav{
 }
 
 #comp{
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
     border: red hidden 1px;
+    background: rgb(247, 247, 247);
 }
 
 #comp h3{
@@ -236,7 +306,8 @@ nav section:hover .textenav{
     font-size: 50px;
     margin-left: 10px;
     color: rgb(48, 48, 48);
-    margin-bottom: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 0px;
     margin-top: 80px;
     margin-left: 8px;
 }
@@ -375,8 +446,10 @@ nav section:hover .textenav{
     bottom: -50px;
 }
 
-#languestitre h4{
+.languestitre h4{
     margin-top: 0px;
+    margin-bottom: 0px;
+    color: red;
 }
 
 .complangues{
@@ -389,6 +462,9 @@ nav section:hover .textenav{
 
     border: blue hidden 1px;
     padding-bottom: 5%;
+    background: rgb(247, 247, 247);
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .complangues section{
@@ -997,7 +1073,7 @@ footer p{
         color: #35567C;
         text-align: justify;
         padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
         margin-right: 10%;
         margin-left: 10%;
     }
@@ -1065,8 +1141,8 @@ footer p{
     }
 
     #comp{
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 0%;
+        margin-left: 0%;
     }
     
     #comp h3{
@@ -1076,8 +1152,8 @@ footer p{
     #comp h4{
         font-size: 8vw;
         margin-left: 10px;
-        margin-bottom: 45px;
-        margin-top: 40px;
+        padding-bottom: 45px;
+        padding-top: 40px;
     }
     
     #comp aside{
@@ -1112,7 +1188,7 @@ footer p{
         width: 90%;
     }
 
-    #languestitre h4{
+    .languestitre h4{
         margin-top: 0px;
     }
 
@@ -1155,7 +1231,7 @@ footer p{
     }
     
     .complangues{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1164,16 +1240,18 @@ footer p{
     
         border: blue hidden 1px;
         padding-bottom: 5%;
-        margin-right: 10%;
-        margin-left: 10%;
+        padding-right: 0%;
+        padding-left: 0%;
     }
     
     .complangues section{
         width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
     }
     
     .complangues article{
-        width: 100%;
+        width: 80%;
     
         display: flex;
         flex-direction: row;
@@ -1181,7 +1259,7 @@ footer p{
         align-content: center;
     
         border: red hidden 1px;
-        margin-right: 10%;
+        margin-right: 0%;
         margin-left: 10%;
     }
     
@@ -1600,6 +1678,89 @@ footer p{
 .dessinslasr ul{
     color: rgb(17, 17, 17);
 }
+
+
+#presentation div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 8%;
+    margin-bottom: 7%;
+    margin-top: 2%;
+}
+
+#presentation article{
+    width: 90%;
+    transform: scale(1.2);
+    margin-bottom: 40px;
+}
+
+#presentation aside{
+    width: 95%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start; 
+}
+
+#presentation section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#iconesPresentationNav{
+    color: rgb(102, 158, 207);
+    font-size: 10vw;
+    transition: 0.3s;
+    z-index: 3;
+    text-align: center;
+}
+
+#presentation aside section:hover #iconesPresentationNav{
+    color: rgb(102, 158, 207);
+    transform: scale(1);
+}
+
+.textePresentationNav{
+    font-size: 5vw;
+    color: #35567C;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    margin-top: -3px;
+    opacity: 1;
+    text-decoration: none;
+    position: initial;
+}
+
+#presentation aside section:hover .textePresentationNav{
+    color: #35567C;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#iconaside{
+    font-size: 5vw;
+ }
+}
+
+@media (max-width: 400px)
+{   
+    #comp .down h5{
+        width: 50px;
+    } 
 }
 
 ::-webkit-scrollbar {
